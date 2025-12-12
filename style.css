@@ -1,7 +1,7 @@
 :root {
-    --bg-color: #050A15; /* Warna background gelap */
+    --bg-color: #050A15;
     --card-bg: #0B1221;
-    --primary-blue: #0080FF; /* Warna tombol biru cerah */
+    --primary-blue: #0080FF;
     --text-white: #ffffff;
     --text-grey: #a0a0a0;
     --font-main: 'Poppins', sans-serif;
@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
 }
 
-/* --- UTILITIES --- */
+
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
@@ -51,7 +51,7 @@ ul { list-style: none; }
     margin-bottom: 10px;
 }
 
-/* --- NAVBAR --- */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -88,7 +88,6 @@ ul { list-style: none; }
 
 .menu-toggle { display: none; cursor: pointer; font-size: 24px;}
 
-/* --- HERO SECTION --- */
 .hero {
     display: flex;
     align-items: center;
@@ -119,7 +118,7 @@ ul { list-style: none; }
     display: block;
 }
 
-/* Typing cursor effect */
+
 .typing-text::after {
     content: "|";
     animation: blink 1s infinite;
@@ -173,12 +172,12 @@ ul { list-style: none; }
 .hero-image img {
     width: 100%;
     max-width: 350px;
-    border-radius: 20px; /* Bentuk melengkung sedikit seperti foto */
+    border-radius: 20px;
     z-index: 2;
     position: relative;
 }
 
-/* Efek garis lingkaran di belakang gambar */
+
 .circle-bg {
     position: absolute;
     width: 400px;
@@ -191,7 +190,7 @@ ul { list-style: none; }
     z-index: 1;
 }
 
-/* --- BRAND STRIP --- */
+
 .brand-strip {
     background: #03060d;
     padding: 30px 8%;
@@ -204,10 +203,10 @@ ul { list-style: none; }
 
 .brand-strip img {
     height: 25px;
-    filter: grayscale(100%) brightness(200%); /* Membuat logo jadi putih */
+    filter: grayscale(100%) brightness(200%);
 }
 
-/* --- ABOUT SECTION --- */
+
 .about {
     padding: 80px 8%;
 }
@@ -266,7 +265,7 @@ ul { list-style: none; }
     margin: 0;
 }
 
-/* --- PROJECTS SECTION --- */
+
 .projects {
     padding: 80px 8%;
 }
@@ -297,7 +296,7 @@ ul { list-style: none; }
 .card-info {
     padding: 20px;
     background-color: var(--text-white);
-    color: #333; /* Text hitam di dalam kartu putih */
+    color: #333;
     position: relative;
 }
 
@@ -318,7 +317,7 @@ ul { list-style: none; }
     justify-content: center;
 }
 
-/* --- FOOTER --- */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -326,10 +325,10 @@ footer {
     font-size: 12px;
 }
 
-/* --- RESPONSIVE (HP) --- */
+
 @media (max-width: 768px) {
     .navbar { padding: 15px 5%; }
-    .nav-links { display: none; } /* Bisa ditambahkan logic toggle JS */
+    .nav-links { display: none; }
     
     .hero { flex-direction: column-reverse; padding-top: 100px; text-align: center;}
     .hero-content { max-width: 100%; }
@@ -341,7 +340,7 @@ footer {
 }
 
 .gradient-text {
-    background: linear-gradient(to right, #ffffff, #1e90ff); /* putih ke biru */
+    background: linear-gradient(to right, #ffffff, #1e90ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
